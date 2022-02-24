@@ -51,6 +51,14 @@ app.listen(puerto, err => {
     }
     // Si no se detuvo arriba con el return, entonces todo va bien ;)
     console.log(`Escuchando en el puerto :${puerto}`);
+    console.log(`Escuchando en el puerto :${puerto}`);
+    console.log(`Escuchando en el puerto :${puerto}`);
+    console.log(`Escuchando en el puerto :${puerto}`);
+    console.log(`Escuchando en el puerto :${puerto}`);
+    console.log(`Escuchando en el puerto :${puerto}`);
+    console.log(`Escuchando en el puerto :${puerto}`);
+    console.log(`Escuchando en el puerto :${puerto}`);
+    
 });
 
 app.get('/hola', (peticion, respuesta) => {
