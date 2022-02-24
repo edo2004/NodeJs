@@ -31,7 +31,7 @@ app.get('/', (peticion, respuesta) => {
 app.get('/pagina', (peticion, respuesta) => {
     // Servir archivo HTML, o cualquier otro archivo
     let rutaDeArchivo = path.join(__dirname, "plantilla.html");
-    respuesta.sendFile(rutaDeArchivo);
+    respuesta.sendFile(rutaDeArchi);
 });
 
 app.get('/hola', (peticion, respuesta) => {
@@ -52,3 +52,12 @@ app.listen(puerto, err => {
     // Si no se detuvo arriba con el return, entonces todo va bien ;)
     console.log(`Escuchando en el puerto :${puerto}`);
 });
+
+app.get('/hola', (peticion, respuesta) => {
+    let mascota = {
+        nombre: "Maggie",
+        edad: 2,
+    };
+    respuesta.json(mascota);
+});
+
